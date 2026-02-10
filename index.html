@@ -1,218 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oman Multi-Omics Training Programme</title>
-
-  <!-- ✅ RELATIVE PATHS (GitHub Pages compatible) -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oman Multi-Omics Training Programme | OCHS</title>
+  <meta name="description" content="Official OCHS training programme in Genomics, Transcriptomics, Proteomics and Multi-omics Integration. Venue, agenda and registration details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <img src="assets/ochs-logo.png" alt="OCHS Logo" />
-      <span>Oman Multi-Omics Training</span>
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Oman Multi-Omics Training Programme">
+        <img class="brand__logo" src="assets/ochs-logo.png" alt="Oman College of Health Sciences" />
+        <div class="brand__text">
+          <div class="brand__name">Oman Multi-Omics Training</div>
+          <div class="brand__sub">Oman College of Health Sciences </div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#programme">Programme</a>
+        <a href="#venue">Venue</a>
+        <a href="#registration">Registration</a>
+        <a href="#sponsors">Sponsors</a>
+        <a class="btn btn--sm" href="#registration">Apply</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <nav class="navLinks" id="navLinks">
+    <div class="mobileNav" id="mobileNav" hidden>
       <a href="#about">About</a>
       <a href="#programme">Programme</a>
       <a href="#venue">Venue</a>
       <a href="#registration">Registration</a>
       <a href="#sponsors">Sponsors</a>
-    </nav>
-
-    <a class="btn btn--primary" href="#registration">Apply</a>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container hero__content">
-    <h1>Advanced Multi-Omics Training Programme</h1>
-    <p>
-      A three-day intensive programme covering genomics, transcriptomics,
-      proteomics, and multi-omics integration.
-    </p>
-
-    <div class="hero__actions">
-      <a href="#registration" class="btn btn--primary">Register Interest</a>
-      <a href="#programme" class="btn btn--ghost">Programme details</a>
+      <a class="btn btn--sm" href="#registration">Apply</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="section" id="about">
-  <div class="container">
-    <h2>About the programme</h2>
-    <p>
-      This professional training programme is designed for students,
-      researchers, and healthcare professionals seeking practical and
-      conceptual understanding of modern multi-omics data analysis.
-    </p>
-  </div>
-</section>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="gridlines"></div>
+      </div>
 
-<section class="section section--alt" id="programme">
-  <div class="container">
-    <h2>Three-day programme</h2>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="eyebrow">
+            <span class="badge">In-person • Hands-on</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span class="eyebrow__text">Genomics • Transcriptomics • Proteomics • Integration</span>
+          </div>
 
-    <table class="programmeTable">
-      <thead>
-        <tr>
-          <th>Day</th>
-          <th>Focus</th>
-          <th>Key activities</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Day 1</strong><br>1 April</td>
-          <td>Opening & Genomics</td>
-          <td>
-            <ul>
-              <li>Opening session and orientation</li>
-              <li>NGS data types and workflows</li>
-              <li>Quality control and preprocessing</li>
-              <li>Variant analysis concepts</li>
+          <h1 class="hero__title">
+            A structured, practical programme in modern omics data analysis.
+          </h1>
+
+          <p class="hero__lead">
+            Designed for postgraduate students, laboratory scientists and healthcare professionals in Oman.
+            Learn reproducible workflows from raw data to biological interpretation using curated real-world datasets.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#registration">Register interest</a>
+            <a class="btn btn--ghost" href="#programme">Programme details</a>
+          </div>
+
+          <div class="hero__highlights">
+            <div class="highlight">
+              <div class="highlight__k">Format</div>
+              <div class="highlight__v">Interactive practical sessions</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight__k">Certificate</div>
+              <div class="highlight__v">Certificate of participation</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight__k">Seats</div>
+              <div class="highlight__v">Limited</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__panel reveal">
+          <div class="panel">
+            <div class="panel__head">
+              <h2>Programme details</h2>
+              <p>Fill the placeholders with official information.</p>
+            </div>
+
+            <dl class="facts">
+              <div class="facts__row">
+                <dt>Date</dt>
+                <dd>1–3 April</dd>
+              </div>
+              <div class="facts__row">
+                <dt>Time</dt>
+                <dd><span class="placeholder">To be announced</span></dd>
+              </div>
+              <div class="facts__row">
+                <dt>Venue</dt>
+                <dd><span class="placeholder">OCHS – Muscat</span></dd>
+              </div>
+              <div class="facts__row">
+                <dt>Requirements</dt>
+                <dd>Laptop + basic molecular biology knowledge</dd>
+              </div>
+            </dl>
+
+            <div class="panel__cta">
+              <a class="btn btn--full" href="#registration">Apply now</a>
+              <button class="btn btn--ghost btn--full" id="downloadBrochure" type="button">Download brochure (PDF)</button>
+            </div>
+
+            <div class="panel__note">
+              <strong>Note:</strong> Registration is subject to seat availability and programme confirmation.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>About the programme</h2>
+          <p>
+            Omics technologies are increasingly used in diagnostics and biomedical research. This programme
+            builds practical competency in data analysis and interpretation across key omics pillars.
+          </p>
+        </div>
+
+        <div class="cards3">
+          <article class="card reveal">
+            <h3>Target audience</h3>
+            <ul class="list">
+              <li>Postgraduate students</li>
+              <li>Laboratory scientists</li>
+              <li>Researchers and clinicians</li>
+              <li>Healthcare professionals interested in omics</li>
             </ul>
-          </td>
-        </tr>
+          </article>
 
-        <tr>
-          <td><strong>Day 2</strong><br>2 April</td>
-          <td>Transcriptomics & Proteomics</td>
-          <td>
-            <ul>
-              <li>RNA-seq experimental design</li>
-              <li>Differential expression analysis</li>
-              <li>Proteomics data interpretation</li>
+          <article class="card reveal">
+            <h3>Learning outcomes</h3>
+            <ul class="list">
+              <li>Understand complete analysis workflows</li>
+              <li>Perform core QC and interpretation steps</li>
+              <li>Produce reproducible outputs and figures</li>
             </ul>
-          </td>
-        </tr>
+          </article>
 
-        <tr>
-          <td><strong>Day 3</strong><br>3 April</td>
-          <td>Multi-omics Integration & Closing</td>
-          <td>
-            <ul>
-              <li>Multi-omics integration strategies</li>
-              <li>Case studies</li>
-              <li>Closing and certificates</li>
+          <article class="card reveal">
+            <h3>Programme format</h3>
+            <ul class="list">
+              <li>In-person, guided practical sessions</li>
+              <li>Curated datasets and step-by-step exercises</li>
+              <li>Certificate of participation</li>
             </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="venue">
-  <div class="container">
-    <h2>Venue</h2>
-    <p><strong>Date:</strong> 1–3 April</p>
-    <p>
-      <strong>Park Inn by Radisson Muscat</strong><br>
-      Al Anwar Street, Muscat 111, Oman
-    </p>
+    
+    <!-- PROGRAMME -->
+    <section class="section section--alt" id="programme">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Three-day programme</h2>
+          <p>
+            The training is delivered as a structured three-day programme, combining lectures,
+            hands-on sessions, and interactive discussions.
+          </p>
+        </div>
 
+        <div class="card reveal">
+          <table class="programmeTable">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Focus</th>
+                <th>Key activities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Day 1</strong><br/>1 April</td>
+                <td>
+                  Opening & Genomics
+                </td>
+                <td>
+                  <ul>
+                    <li>Programme opening and orientation</li>
+                    <li>Introduction to NGS data types and workflows</li>
+                    <li>Quality control and preprocessing</li>
+                    <li>Alignment and variant calling concepts</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Day 2</strong><br/>2 April</td>
+                <td>
+                  Transcriptomics & Proteomics
+                </td>
+                <td>
+                  <ul>
+                    <li>RNA-seq experimental design and QC</li>
+                    <li>Differential expression analysis</li>
+                    <li>Proteomics data types and preprocessing</li>
+                    <li>Differential abundance and interpretation</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Day 3</strong><br/>3 April</td>
+                <td>
+                  Multi-omics Integration & Closing
+                </td>
+                <td>
+                  <ul>
+                    <li>Principles of multi-omics integration</li>
+                    <li>Integrated analysis and visualization</li>
+                    <li>Case studies and discussion</li>
+                    <li>Closing session and certificates</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    
+    <section class="section" id="venue">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Venue and requirements</h2>
+          <p>Venue and logistics information for participants.</p>
+        </div>
+
+        <div class="twoCol">
+          <article class="card reveal">
+            <h3>Venue</h3>
+            <p class="muted"><strong>Date:</strong> 1–3 April</p>
+            <div class="infoGrid">
+              <div class="infoGrid__k">Location</div><div class="infoGrid__v">Park Inn by Radisson Muscat<br/>Al Anwar Street, Muscat 111, Oman</div>
+              <div class="infoGrid__k">Room</div><div class="infoGrid__v">Conference Hall (to be confirmed)</div>
+              <div class="infoGrid__k">Access</div><div class="infoGrid__v">On-site directions will be shared after registration.</div>
+            </div>
+
+            
+<div class="mapCard">
+  <div class="mapCard__inner">
+    <strong>Location map</strong>
     <iframe
+      title="Park Inn by Radisson Muscat Map"
       src="https://www.google.com/maps?q=Park+Inn+by+Radisson+Muscat,+Al+Anwar+Street,+Muscat+111&output=embed"
       width="100%"
-      height="280"
-      style="border:0; border-radius:12px;"
-      loading="lazy">
+      height="260"
+      style="border:0; border-radius:12px; margin-top:10px;"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+    <a class="link" href="https://www.google.com/maps?q=Park+Inn+by+Radisson+Muscat,+Al+Anwar+Street,+Muscat+111" target="_blank" rel="noopener">
+      Open in Google Maps
+    </a>
   </div>
-</section>
+</div>
 
-<section class="section section--alt" id="registration">
-  <div class="container">
-    <h2>Registration</h2>
+          </article>
 
-    <div class="fees">
-      <div><strong>Students:</strong> 35 OMR</div>
-      <div><strong>Professionals:</strong> 45 OMR</div>
-      <p class="note">
-        Early Bird discount (15%) available until <strong>5 March</strong>.
-      </p>
+          <article class="card reveal">
+            <h3>Participant requirements</h3>
+            <ul class="list">
+              <li>Personal laptop (Windows, macOS, or Linux)</li>
+              <li>Basic knowledge of molecular biology and genetics</li>
+              <li>Recommended: basic command-line familiarity</li>
+            </ul>
+
+            <div class="callout">
+              <strong>Pre-work:</strong> Software instructions and a small test dataset will be shared in advance.
+            </div>
+
+            <div class="note">
+              <strong>Accessibility:</strong> If you require accommodations, please mention this in the registration notes.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="section section--alt" id="registration">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Registration</h2>
+          <p>Complete the form below to register your interest. The organizing committee will contact you with confirmation details.</p>
+        </div>
+
+        <div class="twoCol">
+          <form class="card form reveal" id="regForm">
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="affiliation">Affiliation</label>
+                <input id="affiliation" name="affiliation" type="text" placeholder="OCHS / Hospital / University" required />
+              </div>
+              <div class="field">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>OCHS Faculty</option>
+                  <option>Postgraduate student</option>
+                  <option>Healthcare professional</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="interest">Primary interest</label>
+                <select id="interest" name="interest" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Genomics (NGS)</option>
+                  <option>Transcriptomics (RNA-seq)</option>
+                  <option>Proteomics (Mass Spec)</option>
+                  <option>Multi-omics integration</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="level">Experience level</label>
+                <select id="level" name="level" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="notes">Notes (optional)</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Any relevant experience, laptop OS, or questions..."></textarea>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn" type="submit">Submit registration</button>
+              <button class="btn btn--ghost" type="button" id="downloadChecklist">Download pre-work checklist</button>
+            </div>
+
+            <p class="fineprint">
+              By submitting, you agree that your information will be used only for programme communication.
+            </p>
+          </form>
+
+          <aside class="card reveal">
+            
+            <h3>Fees</h3>
+            <p class="muted">
+              </p>
+
+            <div class="feeGrid">
+              <div class="fee">
+                <div class="fee__k">Students</div>
+                <div class="fee__v">35 OMR</div>
+              </div>
+              <div class="fee">
+                <div class="fee__k">Professionals</div>
+                <div class="fee__v">45 OMR</div>
+              </div>
+            </div>
+
+            <div class="callout">
+              <strong>Early Bird Offer:</strong><br/>15% discount applies to the above fees for early registrations <strong>until 5 March</strong>.<br/>
+              <span class="muted small">Discounted prices will be confirmed by the organizing committee.</span>
+            </div>
+
+            <div class="divider"></div>
+    
+
+            <h3>Contact</h3>
+            <p class="muted">
+              nabras.almahrami@ochs.edu.om<br/>
+              
+            </p>
+
+            <div class="callout">
+              <strong>Reminder:</strong> Seats are limited. Please register early.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- SPONSORS -->
+    <section class="section" id="sponsors">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Sponsors and partners</h2>
+          <p>
+            Organizations interested in supporting this programme are invited to register their interest
+            using the form below. The organizing committee will follow up with further details.
+          </p>
+        </div>
+
+        <div class="twoCol">
+          <form class="card form reveal" id="sponsorForm">
+            <div class="form__row">
+              <div class="field">
+                <label for="org">Organization name</label>
+                <input id="org" name="org" type="text" required />
+              </div>
+              <div class="field">
+                <label for="contact">Contact person</label>
+                <input id="contact" name="contact" type="text" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="sponsorEmail">Email</label>
+                <input id="sponsorEmail" name="sponsorEmail" type="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone (optional)</label>
+                <input id="phone" name="phone" type="text" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="interestLevel">Sponsorship interest</label>
+              <select id="interestLevel" name="interestLevel" required>
+                <option value="" selected disabled>Select</option>
+                <option>General sponsor</option>
+                <option>Training materials sponsor</option>
+                <option>Venue / logistics sponsor</option>
+                <option>Strategic / institutional partner</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Brief description of interest or questions"></textarea>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn" type="submit">Submit sponsorship interest</button>
+            </div>
+
+            <p class="fineprint">
+              Submitted information will be used only for sponsorship communication related to this programme.
+            </p>
+          </form>
+
+          <aside class="card reveal">
+            <h3>Why partner with us?</h3>
+            <ul class="list">
+              <li>Support national capacity building in genomics and multi-omics</li>
+              <li>Visibility on official OCHS programme materials</li>
+              <li>Recognition during the opening session</li>
+            </ul>
+
+            <div class="note">
+              Approved sponsors and partners will be displayed on this page and in programme materials.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <img class="footer__logo" src="assets/ochs-logo.png" alt="Oman College of Health Sciences" />
+          <div>
+            <div class="footer__title">Oman Multi-Omics Training</div>
+            <div class="footer__sub">Oman College of Health Sciences</div>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <div class="small muted">© <span id="year"></span> • All rights reserved</div>
+          <a class="link" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <dialog class="dialog" id="dialog">
+    <div class="dialog__inner">
+      <h3 id="dialogTitle">Submitted</h3>
+      <p id="dialogMsg" class="muted">Your response has been recorded.</p>
+      <button class="btn" id="dialogClose" type="button">Close</button>
     </div>
+  </dialog>
 
-    <form id="regForm" class="form">
-      <input type="text" name="name" placeholder="Full name" required>
-      <input type="email" name="email" placeholder="Email address" required>
-      <input type="text" name="affiliation" placeholder="Affiliation" required>
-
-      <select name="category" required>
-        <option value="">Category</option>
-        <option>Student</option>
-        <option>Professional</option>
-      </select>
-
-      <select name="interest" required>
-        <option value="">Primary interest</option>
-        <option>Genomics</option>
-        <option>Transcriptomics</option>
-        <option>Proteomics</option>
-        <option>Multi-omics</option>
-      </select>
-
-      <select name="level" required>
-        <option value="">Experience level</option>
-        <option>Beginner</option>
-        <option>Intermediate</option>
-        <option>Advanced</option>
-      </select>
-
-      <textarea name="notes" placeholder="Additional notes (optional)"></textarea>
-
-      <button class="btn btn--primary" type="submit">Submit registration</button>
-    </form>
-
-    <p class="contact">
-      Contact: <a href="mailto:nabras.almahrami@ochs.edu.om">
-      nabras.almahrami@ochs.edu.om</a>
-    </p>
-  </div>
-</section>
-
-<section class="section" id="sponsors">
-  <div class="container">
-    <h2>Sponsors & Partners</h2>
-
-    <form id="sponsorForm" class="form">
-      <input type="text" name="org" placeholder="Organization name" required>
-      <input type="text" name="contact" placeholder="Contact person" required>
-      <input type="email" name="sponsorEmail" placeholder="Email" required>
-
-      <select name="interestLevel" required>
-        <option value="">Sponsorship interest</option>
-        <option>General sponsor</option>
-        <option>Training materials sponsor</option>
-        <option>Venue / logistics sponsor</option>
-        <option>Strategic partner</option>
-      </select>
-
-      <textarea name="message" placeholder="Message (optional)"></textarea>
-
-      <button class="btn btn--primary" type="submit">
-        Submit sponsorship interest
-      </button>
-    </form>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 Oman College of Health Sciences</p>
-  </div>
-</footer>
-
-<!-- ✅ RELATIVE PATH -->
-<script src="assets/app.js" defer></script>
-
+  <script src="assets/app.js"></script>
 </body>
 </html>
